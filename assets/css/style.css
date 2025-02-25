@@ -37,10 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 9%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    padding: 2rem 0px;
     width: 100%;
     background-color: var(--bg-color);
     z-index: 100;
@@ -75,6 +72,41 @@ body {
     font-weight: 600;
     display: none;
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 99999999;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 /* header-css end */
 
 
@@ -84,14 +116,13 @@ body {
 .banner-page {
     display: flex;
     align-items: center;
-    padding-top: 250px;
-    margin-left: 200px;
+    padding-top:90px;
     padding-bottom: 60px;
 }
 
 .banner-img img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 250px;
     border: 5px solid var(--main-color);
     object-fit: cover;
@@ -163,8 +194,8 @@ body {
 }
 
 .about-img img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 250px;
     border: 3px solid var(--main-color);
     object-fit: cover;
@@ -172,11 +203,11 @@ body {
 }
 
 h2.heading-about {
-    font-size: 54px !important;
+    font-size: 50px !important;
 }
 
 h3.heading {
-    font-size: 32px !important;
+    font-size: 28px !important;
 }
 /* about-section css end  */
 
@@ -283,7 +314,7 @@ h2.education-heading {
 }
 
 h2.heading {
-    font-size: 54px !important;
+    font-size: 50px !important;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -323,7 +354,7 @@ h2.contact-heading {
     .banner-page {
         display: flex;
         align-items: center;
-        padding-top: 250px;
+        padding-top: 90px;
         margin-left: 40px;
         padding-bottom: 60px;
     }
@@ -338,8 +369,8 @@ h2.contact-heading {
     }
     
     .about-img img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         border-radius: 250px;
         
       
@@ -379,7 +410,7 @@ h2.contact-heading {
         border: 3px solid var(--main-color)
     }
     .banner-page {
-        padding-top: 250px;
+        padding-top: 90px;
         margin-left: 112px;
     }
 
@@ -404,9 +435,7 @@ h2.contact-heading {
 
 @media screen and ( max-width : 992px) {
   
-    .header {
-       padding: 28px 8%;     
- }
+
 .navbar a {
     margin-left: 1.5rem;
     }
@@ -414,7 +443,7 @@ h2.contact-heading {
     .banner-page {
     display: flex;
     align-items: start;
-    padding-top: 250px;
+    padding-top: 90px;
     margin-left: -28px;
     padding-bottom: 60px;
 }
@@ -457,14 +486,14 @@ h2.contact-heading {
     }
 
     .banner-page {
-        padding-top: 250px;
+        padding-top: 90px;
         margin-left: -28px;
         padding-bottom: 60px;
     }
     
     .banner-img img {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border-radius: 250px;
         /* margin-left: 80px; */
         margin-top: 50px;
@@ -475,8 +504,8 @@ h2.contact-heading {
  
     
     .about-img img {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border-radius: 250px;
        
         margin-bottom: 60px;
@@ -494,7 +523,7 @@ h2.contact-heading {
 @media screen and (max-width : 575px) {
     
     .banner-page {
-        padding-top: 250px;
+        padding-top: 90px;
         margin-left: 10px;
         padding-bottom: 60px;
 
